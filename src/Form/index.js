@@ -1,5 +1,6 @@
 import "./style.css";
 import Header from "../Header";
+import Result from "../Result";
 
 const Form = () => {
     return (
