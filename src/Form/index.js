@@ -4,7 +4,7 @@ import Header from "../Header";
 const Form = () => {
     return (
         <form className="form">
-            <Header />
+            <Header title="Kantor online" />
             <p>
                 <label><span className="form__labelText">Kwota w zł*:</span>
                     <input placeholder="Wpisz kwotę w zł" className="form__field" type="number" required
