@@ -23,7 +23,7 @@ const Form = () => {
             <p>
                 <button className="form__button">Przelicz</button>
             </p>
-            <p className="form__result"></p>
+            <Result />
         </form>);
 }
 
