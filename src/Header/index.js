@@ -1,8 +1,8 @@
 import "./style.css";
 
-const Header = () => {
+const Header = ({ title }) => {
     return (
-        <h1 className="form__header">Kantor online</h1>
+        <h1 className="form__header">{title}</h1>
     );
 }
 
