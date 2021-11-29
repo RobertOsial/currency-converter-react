@@ -1,6 +1,7 @@
 import "./style.css";
 import Header from "./Header";
 import Result from "./Result";
+import Clock from "./Clock";
 import { currencies } from "../currencies";
 import { useState } from "react";
 
@@ -15,6 +16,7 @@ const Form = ({ result, calculateResult }) => {
 
     return (
         <form onSubmit={onFormSubmit} className="form">
+            <Clock />
             <Header title="Kantor Online" />
             <p>
                 <label><span className="form__labelText">Kwota w zł*:</span>
