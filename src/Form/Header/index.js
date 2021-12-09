@@ -1,8 +1,8 @@
-import "./style.css";
+import { Title } from "./styled";
 
 const Header = ({ title }) => {
     return (
-        <h1 className="form__header">{title}</h1>
+        <Title className="form__header">{title}</Title>
     );
 }
 

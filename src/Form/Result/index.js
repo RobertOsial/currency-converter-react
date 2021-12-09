@@ -1,15 +1,14 @@
-import "./style.css"
+import { Wrapper } from "./styled";
 
 const Result = ({ result }) => {
     return (
-
-        <div className="form__result">
+        <Wrapper>
             {!!result && (
                 <>
                     {`${result.sourceAmount} PLN to ${result.targetAmount.toFixed(2)} ${result.currency}`}
                 </>
             )}
-        </div>
+        </Wrapper>
     );
 }
 

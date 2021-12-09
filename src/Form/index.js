@@ -1,7 +1,11 @@
-import "./style.css";
 import Header from "./Header";
 import Result from "./Result";
-import Clock from "./Clock";
+import {
+    LabelText,
+    Field,
+    Button
+} from "./styled";
+
 import { currencies } from "../currencies";
 import { useState } from "react";
 
@@ -16,13 +20,11 @@ const Form = ({ result, calculateResult }) => {
 
     return (
         <form onSubmit={onFormSubmit} className="form">
-            <Clock />
             <Header title="Kantor Online" />
             <p>
-                <label><span className="form__labelText">Kwota w zł*:</span>
-                    <input
+                <label><LabelText>Kwota w zł*:</LabelText>
+                    <Field
                         placeholder="Wpisz kwotę w zł"
-                        className="form__field"
                         type="number"
                         required
                         step="0.01"
@@ -32,9 +34,9 @@ const Form = ({ result, calculateResult }) => {
                 </label>
             </p>
             <p>
-                <label><span className="form__labelText">Waluta:</span>
-                    <select
-                        className="form__field"
+                <label><LabelText>Waluta:</LabelText>
+                    <Field
+                        as="select"
                         value={currency}
                         onChange={({ target }) => setCurrency(target.value)}
                     >
@@ -46,11 +48,11 @@ const Form = ({ result, calculateResult }) => {
                                 {currency.name}
                             </option>
                         ))}
-                    </select>
+                    </Field>
                 </label>
             </p>
             <p>
-                <button className="form__button">Przelicz</button>
+                <Button>Przelicz</Button>
             </p>
             <Result result={result} />
         </form>
