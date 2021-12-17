@@ -19,7 +19,7 @@ const Form = ({ result, calculateResult }) => {
     }
 
     return (
-        <form onSubmit={onFormSubmit} className="form">
+        <form onSubmit={onFormSubmit} >
             <Header title="Kantor Online" />
             <p>
                 <label><LabelText>Kwota w zł*:</LabelText>
