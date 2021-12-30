@@ -22,14 +22,24 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.white};
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
+   
 
     &:hover {
-        filter: brightness(110%)
+        filter: brightness(110%);
+        cursor: pointer;
     }
 
     &:active {
-        filter: brightness(120%)
+        filter: brightness(120%);
     }
 `
+
+export const Loading = styled.p`
+color: ${({ theme }) => theme.color.green};
+`
+
+export const Failure = styled.p`
+color: ${({ theme }) => theme.color.red}
+`
+
 
