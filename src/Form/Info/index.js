@@ -6,6 +6,6 @@ const Info = ({ date }) => {
             Aktualna tabela z dnia: {date}
         </Wrapper>
     );
-}
+};
 
 export default Info;

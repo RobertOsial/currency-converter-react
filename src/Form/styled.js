@@ -5,7 +5,7 @@ export const LabelText = styled.span`
     width: 100%;
     max-width: 150px;
     margin-right: 5px;
-`
+`;
 
 export const Field = styled.input`
     border: 1px solid #ccc;
@@ -13,7 +13,7 @@ export const Field = styled.input`
     width: 100%;
     max-width: 400px;
     border-radius: 5px;
-`
+`;
 
 export const Button = styled.button`
     width: 100%;
@@ -32,14 +32,14 @@ export const Button = styled.button`
     &:active {
         filter: brightness(120%);
     }
-`
+`;
 
 export const Loading = styled.p`
 color: ${({ theme }) => theme.color.green};
-`
+`;
 
 export const Failure = styled.p`
-color: ${({ theme }) => theme.color.red}
-`
+color: ${({ theme }) => theme.color.red};
+`;
 
 

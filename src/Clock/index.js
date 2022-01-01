@@ -8,7 +8,7 @@ const formatDate = date => date.toLocaleString(undefined, {
     second: "2-digit",
     day: "numeric",
     month: "long"
-})
+});
 
 const Clock = () => {
     const date = useCurrentDate();
@@ -20,6 +20,6 @@ const Clock = () => {
             {formatDate(date)}
         </Wrapper>
     );
-}
+};
 
 export default Clock;

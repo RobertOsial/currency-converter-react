@@ -26,12 +26,12 @@ const Form = () => {
             targetAmount: amount * rate,
             currency,
         });
-    }
+    };
 
     const onFormSubmit = (e) => {
         e.preventDefault();
         calculateResult(amount, currency)
-    }
+    };
 
     return (
         <form onSubmit={onFormSubmit} >
@@ -83,11 +83,9 @@ const Form = () => {
                         <Result result={result} baseCurrency={baseCurrency} />
                         <Info date={date} />
                     </>
-                )
-            )
-            }
+                ))}
         </form>
     );
-}
+};
 
 export default Form;

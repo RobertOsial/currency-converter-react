@@ -12,6 +12,6 @@ const Result = ({ result, baseCurrency }) => {
             )}
         </Wrapper>
     );
-}
+};
 
 export default Result;

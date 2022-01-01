@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     }
 
+    body {
+        margin: 0;
+    }
+
     #root {
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -19,4 +23,5 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url(${background});
     background-size: cover;
     background-position: center;
-}`
+    }
+`;
